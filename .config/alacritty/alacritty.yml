@@ -768,7 +768,9 @@ schemes:
 # *ocean
 
 
-colors: *ocean
+#colors: *ocean
+#colors: *catppuccin
+colors: *dracula
 
 #######################################
 ##       END OF COLOR SCHEMES        ##
