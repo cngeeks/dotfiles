@@ -94,6 +94,8 @@ window:
   # and `light`. Set this to `None` to use the default theme variant.
   #gtk_theme_variant: None
 
+  opacity: 0.5
+
 scrolling:
   # Maximum number of lines in the scrollback buffer.
   # Specifying '0' will disable scrolling.
@@ -766,7 +768,7 @@ schemes:
 # *ocean
 
 
-colors: *moonfly
+colors: *ocean
 
 #######################################
 ##       END OF COLOR SCHEMES        ##
@@ -986,7 +988,7 @@ colors: *moonfly
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.75
+#background_opacity: 0.75
 
 #selection:
   # This string contains all characters that are used as separators for
