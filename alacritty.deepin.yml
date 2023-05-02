@@ -47,8 +47,8 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-   x: 15
-   y: 15
+   x: 5
+   y: 5
 
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
@@ -73,7 +73,7 @@ window:
   #
   # Values for `startup_mode` (macOS only):
   #   - SimpleFullscreen
-  startup_mode: SimpleFullscreen
+  startup_mode: Fullscreen
 
   # Window title
   #title: Alacritty
@@ -82,19 +82,18 @@ window:
   #dynamic_title: true
 
   # Window class (Linux/BSD only):
-  #class:
+  class:
     # Application instance name
-    #instance: Alacritty
+    instance: Alacritty
     # General application class
-    #general: Alacritty
+    general: Alacritty
 
   # GTK theme variant (Linux/BSD only)
   #
   # Override the variant of the GTK theme. Commonly supported values are `dark`
   # and `light`. Set this to `None` to use the default theme variant.
   #gtk_theme_variant: None
-
-  opacity: 0.5
+  gtk_theme_variant: dark
 
 scrolling:
   # Maximum number of lines in the scrollback buffer.
@@ -102,7 +101,7 @@ scrolling:
   history: 100000
 
   # Scrolling distance multiplier.
-  #multiplier: 3
+  multiplier: 2
 
 # Font configuration
 font:
@@ -114,8 +113,9 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    # family: Monaco
-    family: JetBrainsMono Nerd Font Mono
+    #family: Monaco
+    #family: JetBrainsMono Nerd Font Mono
+    family: monospace
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -126,8 +126,9 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    # family: Monaco
-    family: JetBrainsMono Nerd Font Mono
+    #family: Monaco
+    #family: JetBrainsMono Nerd Font Mono
+    family: monospace
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -138,8 +139,9 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    # family: Monaco
-    family: JetBrainsMono Nerd Font Mono
+    #family: Monaco
+    #family: JetBrainsMono Nerd Font Mono
+    family: monospace
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -150,14 +152,15 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    # family: Monaco
-    family: JetBrainsMono Nerd Font Mono
+    #family: Monaco
+    #family: JetBrainsMono Nerd Font Mono
+    family: monospace
 
     # The `style` can be specified to pick a specific face.
     style: Bold Italic
 
   # Point size
-  size: 16.0
+  size: 14.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -177,10 +180,10 @@ font:
   #
   # Thin strokes are suitable for retina displays, but for non-retina screens
   # it is recommended to set `use_thin_strokes` to `false`.
-  #use_thin_strokes: true
+  use_thin_strokes: true
 
 # If `true`, bold text is drawn using the bright color variants.
-draw_bold_text_with_bright_colors: false
+draw_bold_text_with_bright_colors: true
 
 #######################################
 ##      START OF COLOR SCHEMES       ##
@@ -292,7 +295,7 @@ schemes:
       focused_match:
         foreground: '#44475a'
         background: '#ffb86c'
-      colors.footer_bar:
+      bar:
         background: '#282a36'
         foreground: '#f8f8f2'
     line_indicator:
@@ -768,9 +771,8 @@ schemes:
 # *ocean
 
 
-#colors: *ocean
-#colors: *catppuccin
-colors: *dracula
+#colors: *moonfly
+colors: *ocean
 
 #######################################
 ##       END OF COLOR SCHEMES        ##
@@ -990,8 +992,7 @@ colors: *dracula
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-#background_opacity: 0.75
-window.opacity: 0.75
+background_opacity: 0.75
 
 #selection:
   # This string contains all characters that are used as separators for
@@ -1460,8 +1461,8 @@ key_bindings:
   #- { key: Q,              mods: Command,                    action: Quit                  }
   #- { key: W,              mods: Command,                    action: Quit                  }
   #- { key: N,              mods: Command,                    action: SpawnNewInstance      }
-  #- { key: F,              mods: Command|Control,            action: ToggleFullscreen      }
-  - { key: F,              mods: Command|Control,            action: ToggleSimpleFullscreen}
+  - { key: F,              mods: Command|Control,            action: ToggleFullscreen      }
+  #- { key: F,              mods: Command|Control,            action: ToggleSimpleFullscreen}
   #- { key: F,              mods: Command, mode: ~Search,     action: SearchForward         }
   #- { key: B,              mods: Command, mode: ~Search,     action: SearchBackward        }
 
