@@ -74,31 +74,31 @@ shape = "Block"
 TERM = "xterm-256color"
 
 [font]
-#size = 16.0
-size = 22.0
+size = 18.0
+#size = 22.0
 
 [font.bold]
-#family = "JetBrainsMono Nerd Font Mono"
+family = "JetBrainsMono Nerd Font Mono"
 #family = "Sudo"
-family = "Px437 Compaq Port3"
+#family = "Px437 Compaq Port3"
 style = "Bold"
 
 [font.bold_italic]
-#family = "JetBrainsMono Nerd Font Mono"
+family = "JetBrainsMono Nerd Font Mono"
 #family = "Sudo"
-family = "Px437 Compaq Port3"
+#family = "Px437 Compaq Port3"
 style = "Bold Italic"
 
 [font.italic]
-#family = "JetBrainsMono Nerd Font Mono"
+family = "JetBrainsMono Nerd Font Mono"
 #family = "Sudo"
-family = "Px437 Compaq Port3"
+#family = "Px437 Compaq Port3"
 style = "Italic"
 
 [font.normal]
-#family = "JetBrainsMono Nerd Font Mono"
+family = "JetBrainsMono Nerd Font Mono"
 #family = "Sudo"
-family = "Px437 Compaq Port3"
+#family = "Px437 Compaq Port3"
 style = "Regular"
 
 [[keyboard.bindings]]
@@ -124,7 +124,7 @@ history = 100000
 
 [window]
 decorations = "full"
-opacity = 0.5
+opacity = 0.9
 startup_mode = "SimpleFullscreen"
 
 [window.dimensions]
